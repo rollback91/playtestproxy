@@ -3,6 +3,7 @@ import { getColor } from "../../definitions/utils";
 import AutoTextSize from "../autotextsize";
 import "./cards.css";
 import RulesParser from "../rulesParser";
+import ManaParser from "../manaParser/manaParser";
 
 export default function CardNormal({ cards }: { cards: Card }) {
 
@@ -29,7 +30,7 @@ export default function CardNormal({ cards }: { cards: Card }) {
             <div className={`playtest ${colors}`}>
                 <div className={`title white`}>
                     <div className={`left`}> <AutoTextSize text={cards.name} /> </div>
-                    <div className={`right`}> <span className="align-middle"> <i className="ms">{cards.mana_cost}</i> </span> </div>
+                    <div className={`right`}> <p> {ManaParser(cards.mana_cost)} </p> </div>
                 </div>
                 <div className={`image white`}> </div>
                 <div className={`type white`}><AutoTextSize text={cards.type_line} /></div>

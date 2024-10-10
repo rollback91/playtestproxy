@@ -2,6 +2,7 @@ import { getColor } from "@/app/definitions/utils";
 import { Card, CardFace } from "../../definitions/interfaces";
 import AutoTextSize from "../autotextsize";
 import style from "./CardSplit.module.css";
+import ManaParser from "../manaParser/manaParser";
 
 export default function CardSplit({ cards }: { cards: Card }) {
 
@@ -21,7 +22,7 @@ export default function CardSplit({ cards }: { cards: Card }) {
                     <div className={`${style.titleSplit} white`}>
                         <div className={style.left}> <AutoTextSize text={face.name} /> </div>
                         <div className={style.right}>
-                            <span className="align-middle"> <i className="ms">{face.mana_cost}</i> </span>
+                        <p> {ManaParser(face.mana_cost)} </p>
                         </div>
                     </div>
                     <div className={`${style.typeSplit} white`}><AutoTextSize text={face.type_line} /></div>

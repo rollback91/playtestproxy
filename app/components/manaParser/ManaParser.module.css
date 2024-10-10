@@ -1,0 +1,36 @@
+.ms-cost.ms-ub,
+.ms-cost.ms-ubp,
+.ms-cost.ms-wu,
+.ms-cost.ms-wb,
+.ms-cost.ms-ub,
+.ms-cost.ms-ur,
+.ms-cost.ms-br,
+.ms-cost.ms-bg,
+.ms-cost.ms-rw,
+.ms-cost.ms-rg,
+.ms-cost.ms-gw,
+.ms-cost.ms-gu,
+.ms-cost.ms-2w,
+.ms-cost.ms-2u,
+.ms-cost.ms-2b,
+.ms-cost.ms-2r,
+.ms-cost.ms-2g,
+.ms-cost.ms-wup,
+.ms-cost.ms-wbp,
+.ms-cost.ms-ubp,
+.ms-cost.ms-urp,
+.ms-cost.ms-brp,
+.ms-cost.ms-bgp,
+.ms-cost.ms-rwp,
+.ms-cost.ms-rgp,
+.ms-cost.ms-gwp,
+.ms-cost.ms-gup {
+    background: #fff;
+    background: -moz-linear-gradient(135deg, #fff 0%, #fff 48%, #000 50%, #fff 52%, #fff 100%);
+    background: -webkit-linear-gradient(135deg, #fff 0%, #fff 48%, #000 50%, #fff 52%, #fff 100%);
+    background: -o-linear-gradient(135deg, #fff 0%, #fff 48%, #000 50%, #fff 52%, #fff 100%);
+    background: -ms-linear-gradient(135deg, #fff 0%, #fff 48%, #000 50%, #fff 52%, #fff 100%);
+    background: linear-gradient(135deg, #fff 0%, #fff 48%, #000 50%, #fff 52%, #fff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a6c1dd", endColorstr="#9c9188", GradientType=1);
+    border: 0.05em solid black;
+}

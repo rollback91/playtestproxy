@@ -80,11 +80,11 @@
 }
 
 .titleSplit > .left {
-    text-align: left;
-    width: 79%;
+    float: left;
     height: 100%;
     font-weight: 700;
-    display: inline-block;
+    max-width: 75%;
+    align-content: center;
 }
 
 .titleSplit > .left > p {
@@ -93,11 +93,10 @@
 }
 
 .titleSplit > .right {
-    text-align: right;
     float: right;
-    width: 20%;
     height: 100%;
     font-size: 7pt;
+    text-align: right;
 }
 
 .titleSplit > .right > span {

@@ -6,6 +6,8 @@ import CardFlip from "../components/cardFlip/cardFlip";
 import useSWR from 'swr'
 import { useSearchParams } from 'next/navigation'
 import { Suspense } from 'react'
+import ManaParser from "../components/manaParser/manaParser";
+import RulesParser from "../components/rulesParser";
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json())
 
@@ -78,7 +80,6 @@ export default function Page() {
     1 Beluna Grandsquall
     1 Bant
 */
-
   return (
     <main>
       <link href="//cdn.jsdelivr.net/npm/mana-font@latest/css/mana.css" rel="stylesheet" type="text/css" />
