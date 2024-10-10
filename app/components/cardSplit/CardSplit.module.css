@@ -1,0 +1,143 @@
+.border {
+    display: inline-block;
+    position: relative;
+    width: 6.35cm;
+    height: 8.89cm;
+    outline: 3px solid var(--card-color);
+    margin: 1mm;
+}
+
+.card_cut {
+    width: 5.5cm;
+    height: 8.5cm;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    outline: 1px solid black;
+}
+
+.playtest {
+    font-size: 10pt;
+    width: 5cm;
+    height: 8cm;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2px;
+    outline: 1px solid black;
+}
+
+.rotateContainer {
+    width: 8cm;
+    height: 5cm;
+    top:39mm;
+    position:relative;
+    /* outline: 1px solid rgb(6, 238, 48); */
+    transform: rotate(-90deg) translateX(-50%);
+    transform-origin: top left ;
+}
+
+.half {
+    height: 4.8cm;
+    width: 3.9cm;
+    display: inline-block;
+    /* margin-right: 0.1cm;
+    margin-bottom: 1cm; */
+}
+
+.titleSplit {
+    width: 4cm; /* height */
+    height: 0.7cm; /*width */
+    margin-top: 3px;
+}
+
+.ruleSplit {
+    width: 4cm;
+    height: 3.2cm; /*width */
+    margin-top: 3px;
+    align-content: center;
+}
+
+.typeSplit {
+    width: 4cm; /* height */
+    height:0.7cm ; /*width */
+    margin-top: 3px;
+    /* transform: rotate(-90deg);
+    transform-origin: 0% 0%;
+    position:relative;
+    top:4cm;
+    left:0.7cm;
+    display: inline-block; */
+}
+
+.title {
+    width: 100%;
+    height: 8%;
+    vertical-align: center;
+}
+
+.titleSplit > .left {
+    text-align: left;
+    width: 79%;
+    height: 100%;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.titleSplit > .left > p {
+    margin-top: 0;
+    margin-right: 0;
+}
+
+.titleSplit > .right {
+    text-align: right;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-size: 7pt;
+}
+
+.titleSplit > .right > span {
+    margin-right: 3px;
+}
+
+.type {
+    width: 100%;
+    height: 8%;
+    margin-top: 3px;
+}
+
+.rules {
+    width: 100%;
+    height: 41%;
+    margin-top: 3px;
+}
+
+.ruleSplit > p {
+    line-height: 1em;
+}
+
+.power {
+    width: 1cm;
+    height: 7%;
+    position: relative;
+    top: 92%;
+    right: 0cm;
+    text-align: center;
+    margin-top: 3px;
+}
+
+/* br { 
+    display:block; 
+    margin-top:0.3rem;  
+} */
+
+.white{
+    background: white;
+    border: 1px solid black;
+}
+
+
