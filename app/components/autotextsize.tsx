@@ -1,5 +1,5 @@
 'use client'
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 
 export default function AutoTextSize({ text, depth=0 }: { text: any, depth?:number}) {
@@ -9,14 +9,11 @@ export default function AutoTextSize({ text, depth=0 }: { text: any, depth?:numb
     var ro = new ResizeObserver(entries => {
         for (let entry of entries) {
             
-
           if (entry.target.parentNode !== null) {
             let parent = entry.target.parentNode;
             for(let i = 0; i<depth; i++){
-                console.log("here");
                 parent = parent.parentNode!;
             }
-            console.log(parent);
             if ((parent as HTMLElement).scrollHeight > (parent as HTMLElement).clientHeight)
             // || e.parentNode.scrollWidth > e.parentNode.clientWidth )
             {
@@ -27,12 +24,8 @@ export default function AutoTextSize({ text, depth=0 }: { text: any, depth?:numb
       });
 
     useEffect(() => {
-            // setIsInitialRender(false);
             if (text_element.current != null && text_element.current != undefined) {
-                console.log("callleddd");
-                console.log(text_element.current);
                 ro.observe(text_element.current!);
-                // resize(text_element.current);
             }
     },[])
 
