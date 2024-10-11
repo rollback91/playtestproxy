@@ -1,10 +1,10 @@
 'use client'
 import { useRouter } from "next/navigation";
-import { FormEvent } from "react";
+import { FormEvent, useState } from "react";
 
 export default function Home() {
   const router = useRouter()
-  // const [isLoading, setIsLoading] = useState<boolean>(false)
+  const [isLoading, setIsLoading] = useState<boolean>(false)
 
   function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -25,24 +25,26 @@ export default function Home() {
         }
       }
       console.log(samples);
-      // setIsLoading(true); // Set loading to true when the request starts
+      setIsLoading(true); // Set loading to true when the request starts
       router.push(`/deck?cardLists=${samples.join('$/')}`);
-      // setIsLoading(true); // Set loadi}
+      setIsLoading(true); // Set loadi}
     }
   }
 
   return (
     <main>
+      <div className="center">
       <form onSubmit={onSubmit}>
         <label htmlFor="cardList">Insert card list</label>
         <br />
         <textarea id="cardList" name="cardList" rows={10} cols={50}>
         </textarea>
         <br />
-        <button type="submit">SUBMIT
-          {/* {isLoading ? 'Loading...' : 'Submit'} */}
+        <button className="btn" type="submit">
+          {isLoading ? 'Loading...' : 'Submit'}
         </button>
       </form>
+      </div>
     </main>
   );
 }
