@@ -2,7 +2,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 
 
-export default function AutoTextSize({ text, depth=0 }: { text: any, depth:number}) {
+export default function AutoTextSize({ text, depth=0 }: { text: any, depth?:number}) {
     const text_element = useRef(null);
     const [font_size, setSize] = useState(100);
 
