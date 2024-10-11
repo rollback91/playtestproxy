@@ -33,6 +33,7 @@ export default function Home() {
 
   return (
     <main>
+      <div className="center">
       <form onSubmit={onSubmit}>
         <label htmlFor="cardList">Insert card list</label>
         <br />
@@ -43,6 +44,7 @@ export default function Home() {
           {/* {isLoading ? 'Loading...' : 'Submit'} */}
         </button>
       </form>
+      </div>
     </main>
   );
 }
