@@ -22,7 +22,7 @@ export default function CardFlip({ cards }: { cards: Card }) {
             faces.push(
                 <div className={index == 0 ? style.half : style.halfbottom}>
                     <div className={`${style.titleSplit} white`}>
-                        <div className={style.left}> <AutoTextSize text={face.name} /> </div>
+                        <div className={style.left}> <AutoTextSize text={face.name} depth={1} /> </div>
                         <div className={style.right}>
                         <p> {ManaParser(face.mana_cost)} </p>
                         </div>
