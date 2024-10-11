@@ -29,7 +29,7 @@ export default function CardNormal({ cards }: { cards: Card }) {
             <div className="card_cut">
             <div className={`playtest ${colors}`}>
                 <div className={`title white`}>
-                    <div className={`left`}> <AutoTextSize text={cards.name} /> </div>
+                    <div className={`left`}> <AutoTextSize text={cards.name} depth={1}/> </div>
                     <div className={`right`}> <p> {ManaParser(cards.mana_cost)} </p> </div>
                 </div>
                 <div className={`image white`}> </div>
