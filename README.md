@@ -50,6 +50,7 @@ To be able to print correctly you need set those options in the printig settings
 
 ## Mentions
 The mana font used is from https://mana.andrewgioia.com/
+Data from https://scryfall.com/
 
 ### Disclamer
 Wizards of the Coast, Magic: The Gathering, and their logos are trademarks of Wizards of the Coast LLC. © 1995-2024 Wizards. All rights reserved. I'm not affiliated with Wizards of the Coast LLC.
