@@ -1,5 +1,4 @@
 export default function RulesParser(text: string) {
-    console.log("rules", text);
     text = text.toString();
     const symbols = text.match(/(?<=\{)(.*?)(?=\})/g);
 
@@ -13,8 +12,7 @@ export default function RulesParser(text: string) {
             `<i class="ms ms-cost ms-${ms.toLowerCase()}" style="font-size: 0.8em;"></i>`
         );
     });
-
-    text = text.replace('\n',`<br\>`);
+    text = text.replaceAll('\n',`<br\>`);
 
     const obj = {__html:text};
     return (

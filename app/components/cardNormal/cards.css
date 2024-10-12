@@ -130,31 +130,6 @@ br {
     margin-top:0.3rem;  
 }
 
-.G {
-    background: #4c774c;
-}
-
-.U {
-    background: #2174a4;
-}
-
-.W {
-    background: #f2f3ed;
-}
-
-.R {
-    background: #d93a25;
-}
-
-.B {
-    background: #191b17;
-}
-
-.UW {
-    /* max-width: 250px; */
-    background: linear-gradient(to right, #f2f3ed 45%,#2174a4 55%);
-}
-
 .white{
     background: white;
     border: 1px solid black;

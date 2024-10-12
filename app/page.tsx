@@ -11,20 +11,20 @@ export default function Home() {
     const formData = new FormData(event.currentTarget)
 
     const samples: string[] = [];
-    // let cards: any[] | Card = [];
+
     const data = formData.get('cardList');
     if (data !== null) {
       const lines: string[] = (data as string).split('\n');
 
       for (const line of lines) {
-        console.log(line);
+
         const splitted = line.trim().split(' ');
         const [number, ...name] = splitted;
         for (let i = 0; i <  parseInt(number); i++) {
           samples.push(name.join(" "));
         }
       }
-      console.log(samples);
+
       setIsLoading(true); // Set loading to true when the request starts
       router.push(`/deck?cardLists=${samples.join('$/')}`);
       setIsLoading(true); // Set loadi}
