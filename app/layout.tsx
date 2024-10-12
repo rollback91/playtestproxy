@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-import { Nunito } from 'next/font/google'
+import  {Roboto_Slab} from 'next/font/google'
  
-const nunito = Nunito({
+const gfont = Roboto_Slab({
   weight: '400',
   subsets: ['latin'],
 })
@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${nunito.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${gfont.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
