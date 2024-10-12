@@ -43,7 +43,7 @@
 .half {
     height: 4.8cm;
     width: 3.9cm;
-    display: inline-block;
+    display: inline-grid;
     /* margin-right: 0.1cm;
     margin-bottom: 1cm; */
 }

@@ -3,6 +3,7 @@ import { Card, CardFace } from "../../definitions/interfaces";
 import AutoTextSize from "../autotextsize";
 import style from "./CardSplit.module.css";
 import ManaParser from "../manaParser/manaParser";
+import RulesParser from "../rulesParser";
 
 export default function CardSplit({ cards }: { cards: Card }) {
 
@@ -26,7 +27,7 @@ export default function CardSplit({ cards }: { cards: Card }) {
                         </div>
                     </div>
                     <div className={`${style.typeSplit} white`}><AutoTextSize text={face.type_line} /></div>
-                    <div className={`${style.ruleSplit} white`}><AutoTextSize text={face.oracle_text} />
+                    <div className={`${style.ruleSplit} white`}><AutoTextSize text={RulesParser(face.oracle_text)} />
                     {hasPower(face)}
                     </div>
                 </div>
