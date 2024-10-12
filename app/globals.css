@@ -68,6 +68,8 @@ textarea {
   width: 210mm;
   min-height: 297mm;
   margin: auto;
+  padding-left: 5px;
+  padding-top: 10px;
 }
 
 .ARTIFACT{
@@ -111,6 +113,11 @@ textarea {
 .GU {
   /* max-width: 250px; */
   background: linear-gradient(to right, var(--G) 45%,var(--U) 55%);
+}
+
+.BG {
+  /* max-width: 250px; */
+  background: linear-gradient(to right, var(--B) 45%,var(--G) 55%);
 }
 
 .BU {
