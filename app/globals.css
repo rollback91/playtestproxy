@@ -115,6 +115,11 @@ textarea {
   background: linear-gradient(to right, var(--G) 45%,var(--U) 55%);
 }
 
+.BG {
+  /* max-width: 250px; */
+  background: linear-gradient(to right, var(--B) 45%,var(--G) 55%);
+}
+
 .BU {
   /* max-width: 250px; */
   background: linear-gradient(to right, var(--B) 45%,var(--U) 55%);
