@@ -31,6 +31,7 @@ function GetCards() {
     const card: Card = FetchCards(sample.toLocaleLowerCase());
 
     switch (card.layout) {
+      case layout.PROTOTYPE:
       case layout.PLANAR:
       case layout.SAGA:
       case layout.CASE:
