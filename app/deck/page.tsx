@@ -20,12 +20,14 @@ function FetchCards(cardName: string) {
 
 function GetCards() {
   const searchParams = useSearchParams()
-  const cards: any[] = [];
+  const out: any[] = [];
+  let cards: any[] = [];
 
   const lines: string[] = searchParams.get('cardLists')!.split('$/');
+  let counter:number = 0; // counting cards to delimit page
 
   for (const sample of lines) {
-
+    counter++;
     const card: Card = FetchCards(sample.toLocaleLowerCase());
 
     switch (card.layout) {
@@ -40,10 +42,23 @@ function GetCards() {
       case layout.MODALDFC:
       case layout.TRANSFORM:
       case layout.FLIP: { cards.push(<CardFlip cards={card}></CardFlip>); break; }
+      default: {
+        console.log("error printing", card);
+      }
+    }
+
+    if(counter === 9){
+      out.push(<div className="page"> {cards} </div>);
+      cards = [];
+      counter = 0;
     }
   }
 
-  return (<>{cards}</>)
+  if(cards.length !== 0){
+    out.push(<div className="page"> {cards} </div>);
+  }
+
+  return (<>{out}</>)
 }
 
 
@@ -83,11 +98,11 @@ export default function Page() {
   return (
     <main>
       <link href="//cdn.jsdelivr.net/npm/mana-font@latest/css/mana.css" rel="stylesheet" type="text/css" />
-      <div className="page">
+      {/* <div className="page"> */}
         <Suspense>
           <GetCards></GetCards>
         </Suspense>
-      </div>
+      {/* </div> */}
     </main>
   );
 }
